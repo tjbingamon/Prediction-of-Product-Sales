@@ -1,4 +1,4 @@
-# Prediction-of-Product-Sale
+# Prediction of Product Sale
 Thomas Bingamon
 
 ## Project Overview
