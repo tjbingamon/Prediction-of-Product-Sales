@@ -33,7 +33,7 @@ This Histogram shows the distribution of Item MSRP by Outlet Size
 
 ![download](https://user-images.githubusercontent.com/127987424/236344274-1ef9b523-b407-4d20-b6ae-6d256f7c2bd4.png)
 
-##Key Insights
+## Key Insights
 - Low Fat foods are selling more than Regular Fat foods.
 
 
