@@ -3,6 +3,8 @@ Thomas Bingamon
 
 Analyzing sales predictions through food items sold in different stores and to better understand what drives sales
 
+![images](https://user-images.githubusercontent.com/127987424/236351133-b824c8ca-72e0-4902-9c20-1bd0fc989073.jpg)
+
 ## Data Source
 
 https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/
