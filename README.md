@@ -36,4 +36,26 @@ This Histogram shows the distribution of Item MSRP by Outlet Size
 ## Key Insights
 - Low Fat foods are selling more than Regular Fat foods.
 
+## Machine Learning Using Models:
+- Linear Regression Model
+- Decision Tree Model
 
+## Evaluations of Models and their Results:
+- Linear Regression Model (Testing results):
+   - Linear Regression Test  Scores
+   - MAE: 804.2645 
+   - MSE: 1,194,403.5311 
+   - RMSE: 1,092.8877 
+   - R2: 0.5671
+
+- Decison Tree Model (Testing results):
+   - MAE: 738.3556
+   - MSE: 1,118,187.9463
+   - RMSE: 1,057.4441
+   - R2: 0.5947
+
+## Evaluations and Recommendations
+Model Best Recommended: Decision Tree
+  - We have a lower error percentage on Decision Tree vs Linear Regression.
+  - Decision Tree had the lowest MAE. This means our model was only off on it's predictions by 738.36.
+  - The mean Item Outlet Sales was 2181.39. We can now understand we have an error percentage of 33.85%.
