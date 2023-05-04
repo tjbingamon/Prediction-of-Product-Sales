@@ -21,5 +21,19 @@ Below is a Histogram to view the distributions of various features in this datas
 This Histogram shows the distribution of Item MSRP by Outlet Size
 
 ## Explanatory Data Analysis
+1. Does Item Visibility affect Item Outlet Sales?
+   - Yes, according to our graph below we can see that it deeply affects sales
+
+![download-1](https://user-images.githubusercontent.com/127987424/236347663-59873c48-8d8c-4f73-a2da-2b827e597217.png)
+
+
+
+2. Is there a correlation between Outlet Sales vs Item Visability by Fat Content?
+  - There is no correlation between item outlet sales and visibility by fat content
 
 ![download](https://user-images.githubusercontent.com/127987424/236344274-1ef9b523-b407-4d20-b6ae-6d256f7c2bd4.png)
+
+##Key Insights
+- Low Fat foods are selling more than Regular Fat foods.
+
+
