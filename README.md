@@ -79,3 +79,23 @@ Model Best Recommended: Decision Tree
 - Outlet_Type_Supermarket Type 1:
 
   -- If the item sold belongs to this category, the Item Outlet Sales increases Item Outlet Sales by 275.17
+
+## Linear Regression Top 3 Coeffiecients
+
+![top3](https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/4f0a49ca-82a7-4382-9fb5-983e23fe9aae)
+
+### Linear Regression Evaluation:
+
+- Training Data: R2= 0.56 RMSE= 1115.77
+- Test Data: R2= 0.56 RMSE= 1164.92
+- The mean Item Outlet Sales was 2181.39 and the mean absolute error was 859. which equals to an error percentage of 39.4 %.
+
+### Random Forest Model:
+- Feature Importance Plot
+
+![top5 random forest](https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/1e7e77fe-c782-4a2c-8899-5ea09a5fd3a1)
+
+
+
+
+
