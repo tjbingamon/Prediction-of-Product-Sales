@@ -95,6 +95,34 @@ Model Best Recommended: Decision Tree
 
 ![top5 random forest](https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/1e7e77fe-c782-4a2c-8899-5ea09a5fd3a1)
 
+### SHAP Summary Plot 
+
+![SHAP bar plot](https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/6b82eb75-589a-4cf6-a85a-c76ad343e77a)
+
+### Compare SHAP vs Random Forest Feature Importances
+- The only difference is the order. Item_Visibility and Outlet_Type_Supermarket Type 3 are swapped in place.
+
+### Summary plot - with plot_type='dot'
+
+![SHAP Dot](https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/87ff7ba8-2ac2-41dd-8e17-d22cccb33c41)
+
+### Top 3 most important features and how they influence your model's predictions.
+
+1) Item_MRP:
+- Has the largest effect on the model's predictions as it was the first bar at the top of the plot.
+- Since red dots are located on positive side, it means that the higher the Item_MRP, the more likely the model would predict that outlet sales are high
+
+2) Outlet_Type_Grocery Store
+- One-Hot-Encoded feature.
+- Red dots are on the negative side, it is less likely that the model will predict high outlet sales if Outlet Type = Outlet_Type_Grocery Store.
+- If Outlet_Type_Grocery Store == 1, the model is less likely to predict high outlet sales.
+- If Outlet_Type_Grocery Store == 0, the model is more likely to predict high outlet sales.
+
+3) Outlet_Type_Supermarket Type3
+- One-Hot-Encoded feature.
+- Red dots are on the positive side, meaning if the item is sold at Outlet_Type_Supermarket Type3, it is more likely that the model will predict the item to have high outlet sales.
+- If Outlet_Type_Supermarket Type3 == 1, the model is more likely to predict high outlet sales.
+- If Outlet_Type_Supermarket Type3 == 0, the model is less likely to predict high outlet sales.
 
 
 
