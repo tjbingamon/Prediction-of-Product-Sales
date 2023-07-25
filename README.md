@@ -62,3 +62,20 @@ Model Best Recommended: Decision Tree
   - We have a lower error percentage on Decision Tree vs Linear Regression.
   - Decision Tree had the lowest MAE. This means our model was only off on it's predictions by 738.36.
   - The mean Item Outlet Sales was 2181.39. We can now understand we have an error percentage of 33.85%.
+
+## Project Revisited
+ #### Linear Regression Model: Interpret Our Coefficients
+ 
+ - Intercept: Our model assumed a baseline 'Item Outlet Sales' of -137.99
+
+ - Outlet_Type_Grocery Store:
+
+  -- If the item sold belongs to this category, the Item_Outlet_Sales will be decreased by 1590.41.
+
+- Outlet_Type_Supermarket Type 3:
+
+  -- If the item sold belongs to this category, the Item Outlet Sales increases by 1500.88
+
+- Outlet_Type_Supermarket Type 1:
+
+  -- If the item sold belongs to this category, the Item Outlet Sales increases Item Outlet Sales by 275.17
