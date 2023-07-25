@@ -70,7 +70,7 @@ Model Best Recommended: Decision Tree
 
  - Outlet_Type_Grocery Store:
 
-  -- If the item sold belongs to this category, the Item_Outlet_Sales will be decreased by 1590.41.
+    -- If the item sold belongs to this category, the Item_Outlet_Sales will be decreased by 1590.41.
 
 - Outlet_Type_Supermarket Type 3:
 
