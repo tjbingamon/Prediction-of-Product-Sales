@@ -125,5 +125,80 @@ Model Best Recommended: Decision Tree
 - If Outlet_Type_Supermarket Type3 == 0, the model is less likely to predict high outlet sales.
 
 
+# Individual Examples:
+
+- I wanted to see the differences in a row that had the lowest value in their target column and a row that had the highest value in their target column.
+
+# 1) Store that had the item with highest sales (within the 400 samples of SHAP) had Outlet_Type of Supermarket Type1
+
+#### LIME Tabular Explanation:
+
+<img width="931" alt="Screenshot 2023-07-26 at 4 58 37 PM" src="https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/2b08f538-2bdd-4d7c-85bf-8e770ba0ab42">
 
 
+### Interpretation: 
+
+- Item from "Supermarket Type 1" group predicted a high of 6673.35 in outlet sales value.
+
+- Item_MRP was greater than 180.25. It has a positive impact on our outlet sales.
+
+- The facility is not an Outlet_Type_Grocery Store (Value == 0) gave it a positive impact on the outlet sales.
+
+- The facility not being an Outlet_Type_Supermarket Type3 (Value == 0) gave it a negative impact on outlet sales.
+
+#### Force Plot:
+
+<img width="1004" alt="Screenshot 2023-07-26 at 4 59 22 PM" src="https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/7977ff29-5e56-49c5-a7b2-97256e992747">
+
+#### Interpret what features most heavily influenced the predictions, according to SHAP
+
+- The base value = 2,155
+
+- The SHAP value = 6,673.35
+
+- Red features are greater than the blue, which means there is a "push" towards higher outlet sales, so the final prediction is high outlet sales.
+
+- Features that influenced predictions the most (in order from most to least):
+
+  - Item_MRP
+
+  - Item_Weight
+
+  - Item_Visibility
+
+  - Outlet_Type_Grocery Store = 0
+
+  - Outlet_Size_Missing= 1
+
+# 2) Select a row with lowest target value (Item Outlet Sales)
+
+
+#### LIME Tabular Explanation:
+
+<img width="870" alt="Screenshot 2023-07-26 at 4 59 49 PM" src="https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/612bd318-46b5-4d0d-8178-86f09e83c67c">
+
+Interpretation:
+
+- Item_MRP being <= 90.72 gave a negative impact on the outlet sales.
+
+- Outlet_Type_Grocery Store (Value == 1) gave a negative impact on the outlet sales.
+
+- Not being an Outlet_Type_Supermarket Type3 (Value == 0) gave a negative impact on the outlet sales.
+
+
+#### Force Plot:
+
+<img width="1002" alt="Screenshot 2023-07-26 at 5 01 29 PM" src="https://github.com/tjbingamon/Prediction-of-Product-Sales/assets/127987424/78141e13-25ed-4a79-8ebe-6d59ffe272cc">
+
+### Interpretation:
+
+- The base value is 2,155.
+
+- The SHAP value is 64.12.
+
+- The Blue feature is greater than Red, this means there is a "push" towards low outlet sales, so the final prediction would be low outlet sales.
+
+- Features that influenced predictions the most (in order from most to least):
+
+  - Item_MRP
+  - Outlet_Type_Grocery Store = 1
